@@ -18,6 +18,13 @@ app.get("/", (req, res) =>{
 
 })
 
+app.get("/health", (req, res) =>{
+    res.send("health is good");
+
+
+
+})
+
 
 app.post("/addProduct", async (req, res) => {
   try {
